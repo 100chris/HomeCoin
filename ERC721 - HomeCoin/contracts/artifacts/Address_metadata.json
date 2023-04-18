@@ -1,0 +1,37 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MyToken.sol": "Address"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MyToken.sol": {
+			"keccak256": "0xde6a7ba9acdca1ddcba60dd359bf3aefe224d22b42467e5fca481b89c99a3883",
+			"urls": [
+				"bzz-raw://c7c17a1e3c656489b88efb6517d3332cfd228703e3c77a8bb885aa6a080447e6",
+				"dweb:/ipfs/QmcNqdUosB3xBBeqKUpoWBf9qgHpSNs4XMjLAaG6FFpEbc"
+			]
+		}
+	},
+	"version": 1
+}

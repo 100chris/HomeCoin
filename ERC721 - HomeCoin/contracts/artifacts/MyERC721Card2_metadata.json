@@ -1,0 +1,482 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "approved",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "ApprovalForAll",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "cards",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "level",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getApproved",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					}
+				],
+				"name": "isApprovedForAll",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "mintCard",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "setApprovalForAll",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"approve(address,uint256)": {
+					"details": "주어진 토큰 ID의 전송을 다른 주소에게 허가합니다. 영(zero) 주소는 승인된 주소가 없음을 나타냅니다. 한 번에 하나의 승인된 주소만 있을 수 있습니다. 토큰 소유자나 승인된 운영자만이 호출할 수 있습니다.",
+					"params": {
+						"to": "address 주어진 토큰 ID에 대해 승인할 주소",
+						"tokenId": "uint256 승인하고자 하는 토큰 ID"
+					}
+				},
+				"balanceOf(address)": {
+					"details": "명시한 주소의 잔액을 얻습니다.",
+					"params": {
+						"owner": "잔액을 요청하는 주소"
+					},
+					"return": "uint256 전달받은 주소가 보유한 수량"
+				},
+				"getApproved(uint256)": {
+					"details": "토큰 ID에 대해 승인된 주소를, 만일 설정된 주소가 없으면 0을 얻습니다. 만일 토큰 ID가 존재하지 않는 경우 되돌려집니다.",
+					"params": {
+						"tokenId": "uint256 승인된 주소를 요청하는 토큰의 ID"
+					},
+					"return": "address 주어진 토큰 ID에 대해 현재 승인된 주소"
+				},
+				"isApprovedForAll(address,address)": {
+					"details": "주어진 소유자에 대해 운영자가 승인되었는지 여부를 말해줍니다.",
+					"params": {
+						"operator": "승인을 조회하고자 하는 운영자 주소",
+						"owner": "승인을 조회하고자 하는 소유자 주소"
+					},
+					"return": "bool 주어진 운영자가 주어진 소유자로부터 승인되었는지 여부"
+				},
+				"ownerOf(uint256)": {
+					"details": "명시된 토큰 ID의 소유자를 얻습니다.",
+					"params": {
+						"tokenId": "uint256 소유자를 요청하는 토큰의 ID"
+					},
+					"return": "address 주어진 토큰 ID의 현재 표시된 소유자"
+				},
+				"safeTransferFrom(address,address,uint256)": {
+					"details": "주어진 토큰 ID의 소유권을 다른 주소로 안전하게 전송합니다. 만일 목표 주소가 컨트랙트라면, 컨트랙트는 `onERC721Received`를 구현했어야만 합니다. 이는 안전한 전송으로부터 호출되며 마법의 값 `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`를 반환합니다; 만일 다른 경우에는 전송이 되돌려집니다. msg.sender는 소유자, 승인된 주소, 운영자여야 합니다",
+					"params": {
+						"from": "토큰의 현재 소유자",
+						"to": "주어진 토큰 ID의 소유권을 받을 주소",
+						"tokenId": "전송할 토큰의 uint256 ID"
+					}
+				},
+				"safeTransferFrom(address,address,uint256,bytes)": {
+					"details": "주어진 토큰 ID의 소유권을 다른 주소로 안전하게 전송합니다. 만일 목표 주소가 컨트랙트라면, 컨트랙트는 `onERC721Received`를 구현했어야만 합니다. 이는 안전한 전송으로부터 호출되며 마법의 값 `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`를 반환합니다; 만일 다른 경우에는 전송이 되돌려집니다. msg.sender는 소유자, 승인된 주소, 운영자여야 합니다",
+					"params": {
+						"_data": "안전한 전송 검사와 함께 전송하고자 하는 바이트 데이터",
+						"from": "토큰의 현재 소유자",
+						"to": "주어진 토큰 ID의 소유권을 받을 주소",
+						"tokenId": "전송할 토큰의 uint256 ID"
+					}
+				},
+				"setApprovalForAll(address,bool)": {
+					"details": "주어진 운영자의 승인을 설정 또는 해제합니다. 운영자는 발신자를 대신해 모든 토큰을 전송할 수 있도록 허가되었습니다.",
+					"params": {
+						"approved": "설정하고자 하는 승인의 상태를 나타냅니다",
+						"to": "승인을 설정하고자 하는 운영자의 주소"
+					}
+				},
+				"supportsInterface(bytes4)": {
+					"details": "`IERC165.supportsInterface`를 참조하세요.     * 시간 복잡도는 O(1)이며, 항상 30000 가스 미만을 사용하도록 보장합니다."
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "주어진 토큰 ID의 소유권을 다른 주소로 전송합니다. 이 메소드는 사용하지 않는 것이 좋습니다. 가능하다면 `safeTransferFrom`을 사용하세요. msg.sender는 소유자, 승인된 주소, 또는 운영자여야 합니다.",
+					"params": {
+						"from": "토큰의 현재 소유자",
+						"to": "주어진 토큰 ID의 소유권을 받을 주소",
+						"tokenId": "전송할 토큰의 uint256 ID"
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MyToken.sol": "MyERC721Card2"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MyToken.sol": {
+			"keccak256": "0x780f12286340d7e31d15aceb1eb9d9c73649f843487b3683c854a95e9d874d95",
+			"urls": [
+				"bzz-raw://1ea9d7535221147d68221d2b692d5296bfb2464690d070965791cf3e16b40341",
+				"dweb:/ipfs/QmWyMQBkzch4kPmFVdDE37oDpdmxoXpjAu1XpBy3hCjVS4"
+			]
+		}
+	},
+	"version": 1
+}
